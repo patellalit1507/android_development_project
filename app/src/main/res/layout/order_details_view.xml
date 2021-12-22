@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="5dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="5dp"
+    app:cardCornerRadius="7dp"
+    android:elevation="12dp"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/pale_white">
+
+        <ImageView
+            android:id="@+id/order_img"
+            android:layout_width="138dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:elevation="20dp"
+            android:padding="6dp"
+            />
+
+        <TextView
+            android:id="@+id/order_company"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="25dp"
+            android:layout_toRightOf="@+id/order_img"
+            android:textColor="@color/black" />
+        <TextView
+            android:id="@+id/order_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/order_company"
+            android:layout_toRightOf="@id/order_img"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="12dp"/>
+        <TextView
+            android:id="@+id/order_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/order_name"
+            android:layout_toRightOf="@id/order_img"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="12dp"/>
+        <TextView
+            android:id="@+id/order_qty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/order_name"
+            android:layout_toRightOf="@id/order_category"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="12dp"/>
+
+        <TextView
+            android:id="@+id/order_weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/order_name"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="12dp"
+            android:layout_toRightOf="@id/order_qty" />
+
+        <TextView
+            android:id="@+id/order_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/order_category"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/order_img" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

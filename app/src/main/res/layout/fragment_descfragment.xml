@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:overScrollMode="always"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.patelcodex.Supplimo.descfragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.denzcoskun.imageslider.ImageSlider
+            android:id="@+id/image_slider"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            app:iss_auto_cycle="true"
+            app:iss_period="1000"
+            app:iss_delay="0"
+            android:layout_margin="15dp"
+            app:iss_corner_radius="20"
+
+            />
+
+        <TextView
+            android:id="@+id/pro_view_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image_slider"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:text="product"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/pro_view_company"
+            android:layout_height="wrap_content"
+            android:text="product"
+            android:textSize="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/pro_view_name"
+            />
+
+        <RadioGroup
+            android:id="@+id/pro_view_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pro_view_company"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginRight="15dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/item_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="5dp"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginLeft="10dp"/>
+
+            <RadioButton
+                android:id="@+id/item_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:background="@color/white" />
+
+            <RadioButton
+                android:id="@+id/item_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="5dp"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginLeft="10dp"/>
+        </RadioGroup>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buy_now"
+            android:layout_below="@+id/pro_view_price"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="85dp"
+            android:textColor="@color/white"
+            android:text="buy now"
+            android:background="@color/teal_700"/>
+
+        <Button
+            android:id="@+id/addtocart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pro_view_price"
+            android:layout_marginLeft="220dp"
+            android:layout_marginTop="20dp"
+            android:text="add to cart"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:background="@color/more_white"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DESC:"
+            android:layout_below="@+id/buy_now"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"/>
+
+        <com.github.barteksc.pdfviewer.PDFView
+            android:id="@+id/desc_pdf"
+            android:layout_width="match_parent"
+            android:layout_height="600dp"
+            android:layout_below="@id/addtocart"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="10dp"
+            android:elevation="10dp" />
+
+        </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>

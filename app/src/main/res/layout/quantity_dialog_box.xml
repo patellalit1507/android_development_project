@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="280dp"
+        android:layout_height="100dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:elevation="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/radio_group">
+            <RadioButton
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="1"
+                android:id="@+id/one"
+                />
+            <RadioButton
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="2"
+                android:id="@+id/two"
+                />
+            <RadioButton
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="3"
+                android:id="@+id/three"
+                />
+            <RadioButton
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="4"
+                android:id="@+id/four"
+                />
+
+        </RadioGroup>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="done"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/done_btn"
+            android:background="@color/teal_500"
+            />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

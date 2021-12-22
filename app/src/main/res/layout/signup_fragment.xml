@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="340dp"
+        android:layout_height="450dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.422">
+
+        <LinearLayout
+            android:id="@+id/heading"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Verify phone number"
+                android:layout_gravity="center"
+                android:textSize="23dp"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/first_name"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/heading"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/blackbox"
+            android:hint="First name"
+            android:paddingLeft="10dp" />
+
+        <EditText
+            android:id="@+id/last_name"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/heading"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@+id/first_name"
+            android:background="@drawable/blackbox"
+            android:hint="Last name"
+            android:paddingLeft="10dp" />
+
+        <com.hbb20.CountryCodePicker
+            android:id="@+id/countryCodePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/first_name"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/countryCodePicker"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:gravity="left"
+            android:text="Mobile Number"
+            android:textSize="12dp" />
+
+        <EditText
+            android:id="@+id/mobile_no"
+            android:layout_width="180dp"
+            android:layout_height="35dp"
+            android:layout_below="@id/countryCodePicker"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/strokbox"
+            android:gravity="center"
+            android:inputType="phone"
+            android:textSize="20dp" />
+
+
+        <Button
+            android:id="@+id/get_otp"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@id/countryCodePicker"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@id/mobile_no"
+            android:background="@color/more_white"
+            android:text="get otp" />
+
+        <EditText
+            android:id="@+id/otp"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/mobile_no"
+            android:layout_marginLeft="95dp"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/strokbox"
+            android:gravity="center"
+            android:hint="otp"
+            android:maxLength="6"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/verify_otp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/otp"
+            android:layout_marginLeft="106dp"
+            android:layout_marginTop="15dp"
+            android:text="verify OTP" />
+
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
