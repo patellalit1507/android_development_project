@@ -2,6 +2,6 @@
 Application name -Supplimo
 Type - e-commerce
 
-this is a e-coomerce application for all "Health and Suppliment" products
-and integrated with firebase database .
+this is an e-commerce application for all "Health and Supplement" products
+and integrated with the firebase database.
 it has phone-otp verifation integration.
